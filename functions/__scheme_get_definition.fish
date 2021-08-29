@@ -349,6 +349,50 @@ function __scheme_get_definition \
       # set -g scheme_pager_color_secondary
       # set -g scheme_color_history_current    --bold
 
+    case 'xcodedark'
+      # Color palette
+      set -l background     282a36
+      set -l current_line   393b44
+      set -l selection      393b44
+      set -l foreground     dfdfe0
+      set -l comment        84b360
+      set -l cyan           b281eb
+      set -l green          78c2b3
+      set -l orange         d9c97c
+      set -l pink           ff7ab2
+      set -l purple         bd93f9
+      set -l red            ff8170
+      set -l yellow         ffa14f
+      # Preferred to reset all colors
+      __scheme_reset_to_default
+      # Color configurations
+      # set -g scheme_color_normal             normal
+      set -g scheme_color_command            $foreground
+      set -g scheme_color_quote              $yellow
+      set -g scheme_color_redirection        $cyan
+      set -g scheme_color_end                $green
+      set -g scheme_color_error              $red
+      set -g scheme_color_param              $pink
+      set -g scheme_color_comment            $comment
+      set -g scheme_color_operator           $green
+      set -g scheme_color_escape             $purple
+      set -g scheme_color_cwd                $green
+      set -g scheme_color_cwd_root           $red
+      set -g scheme_color_autosuggestion     $purple
+      set -g scheme_color_user               $orange
+      set -g scheme_color_host               $foreground
+      # set -g scheme_color_cancel             --reverse
+      # set -g scheme_color_valid_path         --underline
+      # set -g scheme_color_match              --background=brblue
+      # set -g scheme_color_selection          white --bold --background=brblack
+      # set -g scheme_color_search_match       bryellow --background=brblack
+      # set -g scheme_pager_color_prefix       white --bold --underline
+      # set -g scheme_pager_color_completion   normal
+      # set -g scheme_pager_color_description  B3A06D
+      # set -g scheme_pager_color_progress     brwhite --background=cyan
+      # set -g scheme_pager_color_secondary
+      # set -g scheme_color_history_current    --bold
+
     # https://github.com/jnurmine/Zenburn
     case 'zenburn'
       # Color palette
