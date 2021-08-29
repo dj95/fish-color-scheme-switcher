@@ -70,6 +70,7 @@ function __scheme_get_definition \
     echo 'tomorrow'
     echo 'tomorrow-night'
     echo 'tomorrow-night-bright'
+    echo 'xcodedark'
     echo 'zenburn'
     return
   end
