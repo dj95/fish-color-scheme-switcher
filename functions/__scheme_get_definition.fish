@@ -65,6 +65,8 @@ function __scheme_get_definition \
   if [ -z $scheme_name ]
     echo 'default'
     echo 'dracula'
+    echo 'github_dark'
+    echo 'github_light'
     echo 'monokai'
     echo 'solarized'
     echo 'tomorrow'
@@ -154,6 +156,104 @@ function __scheme_get_definition \
       set -g scheme_color_autosuggestion     $comment
       set -g scheme_color_user               $orange
       set -g scheme_color_host               $foreground
+      # set -g scheme_color_cancel             --reverse
+      # set -g scheme_color_valid_path         --underline
+      # set -g scheme_color_match              --background=brblue
+      # set -g scheme_color_selection          white --bold --background=brblack
+      # set -g scheme_color_search_match       bryellow --background=brblack
+      # set -g scheme_pager_color_prefix       white --bold --underline
+      # set -g scheme_pager_color_completion   normal
+      # set -g scheme_pager_color_description  B3A06D
+      # set -g scheme_pager_color_progress     brwhite --background=cyan
+      # set -g scheme_pager_color_secondary
+      # set -g scheme_color_history_current    --bold
+
+    # https://github.com/projekt0n/github-nvim-theme
+    case 'github_dark'
+      # Color palette
+      set -l base03         1f2428
+      set -l base02         24292e
+      set -l base01         666666
+      set -l base00         666666
+      set -l base0          697179
+      set -l base1          586069
+      set -l base2          bdbdbd
+      set -l base3          cdcdcd
+      set -l yellow         e2e210
+      set -l orange         d18616
+      set -l red            f14c4c
+      set -l magenta        d670d6
+      set -l violet         bc3fbc
+      set -l blue           3b8eea
+      set -l cyan           29b7da
+      set -l green          23d18b
+      # Preferred to reset all colors
+      __scheme_reset_to_default
+      # Color configurations
+      # set -g scheme_color_normal             normal
+      set -g scheme_color_command            $blue
+      set -g scheme_color_quote              $cyan
+      set -g scheme_color_redirection        $violet
+      set -g scheme_color_end                $green
+      set -g scheme_color_error              $red
+      set -g scheme_color_param              $base1
+      set -g scheme_color_comment            $base01
+      set -g scheme_color_operator           $yellow
+      set -g scheme_color_escape             $base00
+      set -g scheme_color_cwd                $yellow
+      set -g scheme_color_cwd_root           $red
+      set -g scheme_color_autosuggestion     $base01
+      set -g scheme_color_user               $magenta
+      set -g scheme_color_host               $base1
+      # set -g scheme_color_cancel             --reverse
+      # set -g scheme_color_valid_path         --underline
+      # set -g scheme_color_match              --background=brblue
+      # set -g scheme_color_selection          white --bold --background=brblack
+      # set -g scheme_color_search_match       bryellow --background=brblack
+      # set -g scheme_pager_color_prefix       white --bold --underline
+      # set -g scheme_pager_color_completion   normal
+      # set -g scheme_pager_color_description  B3A06D
+      # set -g scheme_pager_color_progress     brwhite --background=cyan
+      # set -g scheme_pager_color_secondary
+      # set -g scheme_color_history_current    --bold
+
+    # https://github.com/projekt0n/github-nvim-theme
+    case 'github_light'
+      # Color palette
+      set -l base03         1f2428
+      set -l base02         24292e
+      set -l base01         666666
+      set -l base00         666666
+      set -l base0          697179
+      set -l base1          586069
+      set -l base2          bdbdbd
+      set -l base3          cdcdcd
+      set -l yellow         949800
+      set -l orange         d18616
+      set -l red            d03d3d
+      set -l magenta        bc05bc
+      set -l violet         bc05bc
+      set -l blue           0451a5
+      set -l cyan           0598bc
+      set -l green          14ce14
+      # Preferred to reset all colors
+      __scheme_reset_to_default
+      # Color configurations
+      # set -g scheme_color_normal             normal
+      set -g scheme_color_command            $blue
+      set -g scheme_color_quote              $cyan
+      set -g scheme_color_redirection        $violet
+      set -g scheme_color_end                $green
+      set -g scheme_color_error              $red
+      set -g scheme_color_param              $base1
+      set -g scheme_color_comment            $base01
+      set -g scheme_color_operator           $yellow
+      set -g scheme_color_escape             $base00
+      set -g scheme_color_cwd                $yellow
+      set -g scheme_color_cwd_root           $red
+      set -g scheme_color_autosuggestion     $base01
+      set -g scheme_color_user               $magenta
+      set -g scheme_color_host               $base1
       # set -g scheme_color_cancel             --reverse
       # set -g scheme_color_valid_path         --underline
       # set -g scheme_color_match              --background=brblue
