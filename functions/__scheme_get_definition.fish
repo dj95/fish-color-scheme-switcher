@@ -68,6 +68,7 @@ function __scheme_get_definition \
     echo 'github_dark'
     echo 'github_light'
     echo 'monokai'
+    echo 'nord'
     echo 'solarized'
     echo 'tomorrow'
     echo 'tomorrow-night'
@@ -235,7 +236,7 @@ function __scheme_get_definition \
       set -l violet         bc05bc
       set -l blue           0451a5
       set -l cyan           0598bc
-      set -l green          14ce14
+      set -l green          005500
       # Preferred to reset all colors
       __scheme_reset_to_default
       # Color configurations
@@ -303,6 +304,51 @@ function __scheme_get_definition \
       set -g scheme_color_autosuggestion     $base01
       set -g scheme_color_user               $magenta
       set -g scheme_color_host               $base1
+      # set -g scheme_color_cancel             --reverse
+      # set -g scheme_color_valid_path         --underline
+      # set -g scheme_color_match              --background=brblue
+      # set -g scheme_color_selection          white --bold --background=brblack
+      # set -g scheme_color_search_match       bryellow --background=brblack
+      # set -g scheme_pager_color_prefix       white --bold --underline
+      # set -g scheme_pager_color_completion   normal
+      # set -g scheme_pager_color_description  B3A06D
+      # set -g scheme_pager_color_progress     brwhite --background=cyan
+      # set -g scheme_pager_color_secondary
+      # set -g scheme_color_history_current    --bold
+
+    # https://github.com/maaslalani/nordbuddy 
+    case 'nord'
+      # Color palette
+      set -l background     2E3440
+      set -l current_line   2E3440
+      set -l selection      FFFACD
+      set -l foreground     D8DEE9
+      set -l comment        667084
+      set -l red            BF616A
+      set -l orange         ebcb8b
+      set -l yellow         ebcb8b
+      set -l green          A3BE8C
+      set -l aqua           88C0D0
+      set -l blue           81A1C1
+      set -l purple         B48EAD
+      # Preferred to reset all colors
+      __scheme_reset_to_default
+      # Color configurations
+      # set -g scheme_color_normal             normal
+      set -g scheme_color_command            $purple
+      set -g scheme_color_quote              $green
+      set -g scheme_color_redirection        $aqua
+      set -g scheme_color_end                $purple
+      set -g scheme_color_error              $red
+      set -g scheme_color_param              $blue
+      set -g scheme_color_comment            $comment
+      set -g scheme_color_operator           $orange
+      set -g scheme_color_escape             $orange
+      set -g scheme_color_cwd                $aqua
+      set -g scheme_color_cwd_root           $red
+      set -g scheme_color_autosuggestion     $comment
+      set -g scheme_color_user               $green
+      set -g scheme_color_host               $foreground
       # set -g scheme_color_cancel             --reverse
       # set -g scheme_color_valid_path         --underline
       # set -g scheme_color_match              --background=brblue
