@@ -319,23 +319,23 @@ function __scheme_get_definition \
     # https://github.com/maaslalani/nordbuddy 
     case 'nord'
       # Color palette
-      set -l background     2E3440
-      set -l current_line   2E3440
-      set -l selection      FFFACD
-      set -l foreground     D8DEE9
-      set -l comment        667084
-      set -l red            BF616A
-      set -l orange         ebcb8b
-      set -l yellow         ebcb8b
-      set -l green          A3BE8C
-      set -l aqua           88C0D0
-      set -l blue           81A1C1
-      set -l purple         B48EAD
+      set -l background    #2E3440
+      set -l current_line  #2E3440
+      set -l selection     #FFFACD
+      set -l foreground    #D8DEE9
+      set -l comment       #667084
+      set -l red           #BF616A
+      set -l orange        #ebcb8b
+      set -l yellow        #ebcb8b
+      set -l green         #A3BE8C
+      set -l aqua          #88C0D0
+      set -l blue          #81A1C1
+      set -l purple        #B48EAD
       # Preferred to reset all colors
       __scheme_reset_to_default
       # Color configurations
       # set -g scheme_color_normal             normal
-      set -g scheme_color_command            $purple
+      set -g scheme_color_command            $foreground
       set -g scheme_color_quote              $green
       set -g scheme_color_redirection        $aqua
       set -g scheme_color_end                $purple
