@@ -325,7 +325,7 @@ function __scheme_get_definition \
       set -l foreground     A6ACCD
       set -l comment        464B5D
       set -l red            F07178
-      set -l orange         F78C6C
+      set -l orange         D0A466
       set -l yellow         FFCB6B
       set -l green          C3E88D
       set -l aqua           89DDFF
